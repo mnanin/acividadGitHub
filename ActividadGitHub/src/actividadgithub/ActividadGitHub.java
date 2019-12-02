@@ -60,13 +60,19 @@ public class ActividadGitHub {
         return enteroIntroducido;
     }
     
-    // AÑADE AQUÍ UNA FUNCIÓN LLAMADA "calculaSuperficie" QUE, PASADAS LAS MEDIDAS DE LOS DOS LADOS DEL RECTÁNGULO (TIPO INTEGER) COMO PARÁMETROS,
-    // CALCULE LA SUPERFICIE Y LA MUESTRE POR PANTALLA ("La superficie del rectángulo es de ___ metros cuadrados.").
-    // SUPERFICIE DE UN RECTÁNGULO = LADO LARGO x LADO CORTO.
-    public static void calculaSuperficie(int ladoA, int ladoB){
-    int superficie=ladoA*ladoB;
+    // Método que, pasadas las medidas de los dos lados del rectángulo como parámetros, calcula la superficie y la muestra por pantalla mediante el return:
+    // El parámetro ladoA corresponde al valor de tipo entero de uno de los lados del rectángulo.
+    // El parámetro ladoB corresponde al valor de tipo entero del otro lado del rectángulo.
+    // El parámetro "return" devuelve el valor de la variable "resultado", que es un String con la superficie después de haberlo incorporado en una salida predefinida.
+    public static String calculaSuperficie(int ladoA, int ladoB){
     
-        System.out.println("La superficie del rectángulo es de "+ superficie +" centímetros cuadrados.");
+        // Creamos la variable de tipo entero "superficie" a la que atribuimos el resultado de multiplicar ladoA por ladoB:
+        int superficie = ladoA * ladoB;
+        
+        // Atribuimos el valor de la superficie a la variable de tipo String "resultado" para incorporarlo en una salida predefinida:
+        String resultado = "La superficie del rectángulo es de " + superficie + " centímetros cuadrados.";
     
+        // Mostramos el valor de la variable "resultado" por pantalla mediante el return:
+        return resultado;
     }
 }
