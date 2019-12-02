@@ -19,7 +19,7 @@ public class ActividadGitHub {
         // Pedimos los dos lados del rectángulo:
         int ladoA = pedirEntero(MSJ_PEDIR_LADO_A, MSJ_ERROR_VALOR);
         int ladoB = pedirEntero(MSJ_PEDIR_LADO_B, MSJ_ERROR_VALOR);
-//        calculaSuperficie (ladoA, ladoB);
+        calculaSuperficie (ladoA, ladoB);
     }
     
     // Método para introducir por teclado el número que será devuelto al código que lo ha llamado:
@@ -63,5 +63,10 @@ public class ActividadGitHub {
     // AÑADE AQUÍ UNA FUNCIÓN LLAMADA "calculaSuperficie" QUE, PASADAS LAS MEDIDAS DE LOS DOS LADOS DEL RECTÁNGULO (TIPO INTEGER) COMO PARÁMETROS,
     // CALCULE LA SUPERFICIE Y LA MUESTRE POR PANTALLA ("La superficie del rectángulo es de ___ metros cuadrados.").
     // SUPERFICIE DE UN RECTÁNGULO = LADO LARGO x LADO CORTO.
+    public static void calculaSuperficie(int ladoA, int ladoB){
+    int superficie=ladoA*ladoB;
     
+        System.out.println("La superficie del rectángulo es de "+ superficie +" centímetros cuadrados.");
+    
+    }
 }
